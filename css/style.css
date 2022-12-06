@@ -1,0 +1,76 @@
+/*   random images:      https://source.unsplash.com/random    */
+
+/**********************************************
+                Global styles
+**********************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/tip.jpg) center/cover no-repeat;
+  /* background-position: center;
+  box-sizing: cover;
+  background-repeat: no-repeat; */
+  height: 100vh;
+}
+
+:root {
+  --bg-prim-c: #fff;
+  --bg-sec-c: #121a25;
+  --txt-prim-c: #3b2407;
+  --txt-sec-c: #e8a141;
+}
+
+/**********************************************
+                Specific styles
+**********************************************/
+select {
+  display: initial;
+}
+
+.card {
+  width: 98%;
+  margin: auto;
+  background-color: var(--bg-prim-c);
+  top: calc(50%);
+  transform: translateY(-50%);
+  border: 1px solid #444;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px rgba(3, 3, 3, .2);
+  opacity: .85;
+  padding: 1rem;
+}
+
+.text-prim {
+  color: var(--txt-prim-c);
+  font-size: 2rem;
+  padding: 1rem 0;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px;
+}
+
+.text-sec {
+  color: var(--txt-sec-c);
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #333;
+}
+
+/**************************************
+            @media Queries
+**************************************/
+
+@media all and (min-width: 576px) {
+  .card {
+    width: 30rem;
+    margin-left: 5px;
+  }
+
+  .text-prim {
+    font-size: 2.3rem;
+  }
+}
